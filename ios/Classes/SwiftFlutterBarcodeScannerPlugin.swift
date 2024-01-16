@@ -598,10 +598,10 @@ extension BarcodeScannerViewController: AVCaptureMetadataOutputObjectsDelegate {
 
 // Handle auto rotation
 extension BarcodeScannerViewController{
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        updateUIAfterRotation()
-    }
+    // override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+    //     super.viewWillTransition(to: size, with: coordinator)
+    //     updateUIAfterRotation()
+    // }
     
     func updateUIAfterRotation(){
         DispatchQueue.main.async {
